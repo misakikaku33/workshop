@@ -9,12 +9,12 @@
 <meta property="og:description" content="養成所や事務所に入る前に、知っておくべきことがあります。声の出し方も、お金の守り方も。全8回・初回無料・オンライン。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://misakikaku33.github.io/workshop/">
-<meta property="og:image" content="https://misakikaku33.github.io/workshop/ogp.png">
+<meta property="og:image" content="https://misakikaku33.github.io/workshop/ogp.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="ミサキカク">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://misakikaku33.github.io/workshop/ogp.png">
+<meta name="twitter:image" content="https://misakikaku33.github.io/workshop/ogp.jpg">
 <link rel="canonical" href="https://misakikaku33.github.io/workshop/">
 <style>
 :root{
@@ -34,7 +34,7 @@ section{padding:56px 24px}
 .topbar{max-width:720px;margin:0 auto;padding:14px 16px 0}
 .logo{width:44px;height:44px;border-radius:50%;display:block}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-.kv-wide{margin-top:14px;background-image:url(kv.jpg);background-size:cover;background-position:center;aspect-ratio:1672/941}
+.kv-wide{max-width:720px;margin:14px auto 0;background-image:url(kv.jpg);background-size:cover;background-position:center;aspect-ratio:1672/941}
 .kv-narrow{display:none}
 .rule{width:32px;height:1px;background:var(--navy-light);margin:0 auto 18px}
 @media(max-width:699px){
@@ -71,7 +71,11 @@ section{padding:56px 24px}
 /* two cards */
 .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .card{background:var(--white);border:1px solid var(--paper-line);border-radius:6px;padding:20px 16px}
-.card h3{color:var(--navy);font-size:15px;font-weight:600;margin-bottom:8px}
+.card{padding:0;overflow:hidden}
+.card-img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.card h3{color:var(--navy);font-size:15px;font-weight:600;margin:16px 16px 8px}
+.card p{margin:0 16px 18px}
+.card h3{color:var(--navy);font-size:15px;font-weight:600}
 .card p{color:var(--ink-sub);font-size:13px;line-height:1.9}
 @media(max-width:480px){.two{grid-template-columns:1fr}}
 
@@ -107,6 +111,9 @@ summary::-webkit-details-marker{display:none}
 summary::after{content:"＋";position:absolute;right:4px;top:17px;color:var(--navy-light);font-weight:400}
 details[open] summary::after{content:"−"}
 details p{color:var(--ink-sub);font-size:14px;line-height:2.05;padding:0 0 18px}
+
+.stage-band{background:var(--paper);padding:0 0 8px}
+.stage-img{width:100%;height:auto;display:block;border-radius:6px}
 
 /* cta */
 .cta{background:var(--navy);color:#f2f5f9;text-align:center}
@@ -146,8 +153,8 @@ footer a{color:#b9c9de}
   <h2 class="h">毎回、この2つをやります</h2>
   <p class="h-en">2 HOURS × 8 WEEKS</p>
   <div class="two">
-    <div class="card"><h3>座学 40分</h3><p>仕事のしくみ・確定申告・契約。個人事業主として働くために必要な知識を、順を追って学びます。</p></div>
-    <div class="card"><h3>実技 70分</h3><p>呼吸法・発声・台本読み。毎回同じ基礎を積み重ねながら、読む力を育てます。</p></div>
+    <div class="card"><img class="card-img" src="lecture.jpg" alt="" width="900" height="675" loading="lazy"><h3>座学 40分</h3><p>仕事のしくみ・確定申告・契約。個人事業主として働くために必要な知識を、順を追って学びます。</p></div>
+    <div class="card"><img class="card-img" src="practice.jpg" alt="" width="900" height="675" loading="lazy"><h3>実技 70分</h3><p>呼吸法・発声・台本読み。毎回同じ基礎を積み重ねながら、読む力を育てます。</p></div>
   </div>
   <p class="note">※ 時間配分は目安です。内容によって前後します。1回の所要時間は休憩・質疑を含めて2時間です。</p>
 </section>
@@ -209,6 +216,12 @@ footer a{color:#b9c9de}
     <details><summary>都合が合わず、参加できない回があります。</summary><p>欠席された回は、後日録画をお送りします。振替受講はありません。</p></details>
     <details><summary>事務所に所属していますが、参加できますか。</summary><p>ご参加いただけます。所属先の規定がある場合は、事前にご確認のうえお申し込みください。</p></details>
     <details><summary>修了したあと、出演の機会はありますか。</summary><p>ミサキカクでは南阿佐ヶ谷のライブハウスで「ミサキカク毎週公演」を主催しています。修了された方には、この公演への出演をご案内しています。</p></details>
+  </div>
+</section>
+
+<section class="stage-band">
+  <div class="wrap" style="padding:0 24px">
+    <img class="stage-img" src="stage.jpg" alt="" width="1400" height="787" loading="lazy">
   </div>
 </section>
 
